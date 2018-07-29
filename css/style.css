@@ -319,6 +319,11 @@ nav{
 	transition: all 0.5s ease 0s;
 }
 
+.timeline a{
+	text-decoration: none;
+	color: #000000;
+}
+
 .timeline h5{
 	padding-top: 10px;
 }
@@ -376,13 +381,14 @@ nav{
 }
 
 .hobby{
-	padding-top: 70px;
+	padding-top: 150px;
 }
 
 #coding_link{
 	position: relative;
 	text-decoration: none;
 	color: #000000;
+	font-weight: bold;
 }
 
 #coding_link:before{
@@ -409,9 +415,11 @@ nav{
 	transform: scaleX(1);
 }
 
+/*
 #coding_link:hover{
 	font-weight: bold;
 }
+*/
 
 #coding_txt p, #hobby_txt p{
 	padding-top: 20px;
@@ -501,6 +509,7 @@ body .hidden_name{
 
 /*COPYRIGHTS*/
 .copyrights{
+	/*background: #d0d0d0;*/
 	padding-top: 70px;
 	padding-bottom: 70px;
 }
@@ -556,6 +565,121 @@ footer{
 	-moz-transition: opacity 0.1s ease-in-out;
 	transition: opacity 0.1s ease-in-out;
 }
+
+/*POPUPS*/
+.popup{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.7);
+	visibility: hidden;
+	z-index: 3;
+	opacity: 0;
+	/*overflow: auto;*/
+	-webkit-transition: opacity 0.2s ease-in-out;
+	-moz-transition: opacity 0.2s ease-in-out;
+	transition: opacity 0.2s ease-in-out;
+}
+
+.popup:target{
+	visibility: visible;
+	opacity: 1;
+}
+
+.popup_content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #ffffff;
+	margin: auto;
+	padding: 20px;
+	width: 50%;
+	max-height: 75%;
+	border-radius: 10px;
+	overflow: auto;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.popup_content img{
+	width: 35px;
+}
+
+.popup_close{
+	float: right;
+	text-decoration: none;
+	font-size: 25px;
+	color: #666666;
+	font-weight: bold;
+	/*-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;*/
+}
+
+.popup h6{
+	float: none;
+	font-size: 16px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.popup_txt{
+	font-size: 14px;
+}
+
+.popup_txt a{
+	position: relative;
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+}
+
+.popup_txt a:before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	bottom: 0;
+	left: 0;
+	background-color: #000000;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	-moz-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	-moz-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;
+}
+
+.popup_txt a:hover:before{
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	-moz-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+.popup_txt span{
+	font-weight: bold;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+.popup_close:hover{
+	color: #000000;
+}
+
+
+
+
+
+
+
 
 
 

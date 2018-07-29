@@ -107,30 +107,90 @@
 			<div class="container">
 				<h2 class="headline">Education & Work</h2>
 				<hr class="separator headline_separator" /></br>
-				<div class="timeline left" tabindex="0">
-					<h5>September 2017 - Present</h5>
-					<h6>Neuca</br>IT Department</h6>
-					<p>Junior Service Desk Specialist</p>
+				<div class="timeline left" id="neuca" tabindex="0">
+					<a href="#neuca_popup">
+						<h5>September 2017 - Present</h5>
+						<h6>Neuca</br>IT Department</h6>
+						<p>Junior Service Desk Specialist</p>
+					</a>
 				</div>
-				<div class="timeline right" tabindex="0">
-					<h5>October 2016 - September 2017</h5>
-					<h6>Nicolaus Copernicus University in Toruń</br>Postgraduate Course in Computer Programming and Application</h6>
-					<p>Section: .NET</p>
+				<div class="timeline right" id="umk" tabindex="0">
+					<a href="#umk_popup">
+						<h5>October 2016 - September 2017</h5>
+						<h6>Nicolaus Copernicus University in Toruń</br>Postgraduate Course in Computer Programming and Application</h6>
+						<p>.NET section</p>
+					</a>
 				</div>
-				<div class="timeline left" tabindex="0">
-					<h5>May 2015 - August 2017</h5>
-					<h6>Main Inspectorate of Plant Protection</br>Central Laboratory in Torun</h6>
-					<p>Technician</p>
+				<div class="timeline left" id="cl" tabindex="0">
+					<a href="#cl_popup">
+						<h5>May 2015 - August 2017</h5>
+						<h6>Main Inspectorate of Plant Protection</br>Central Laboratory in Torun</h6>
+						<p>Technician</p>
+					</a>
 				</div>
-				<div class="timeline right" tabindex="0">
-					<h5>October 2010 - January 2015</h5>
-					<h6>Poznań University of Life Sciences</h6>
-					<p>Engineering in Biotechnology</p>
+				<div class="timeline right" id="up" tabindex="0">
+					<a href="#up_popup">
+						<h5>October 2010 - January 2015</h5>
+						<h6>Poznań University of Life Sciences</h6>
+						<p>Engineering in Biotechnology</p>
+					</a>
 				</div>
-				<div class="timeline left" tabindex="0">
-					<h5>October 2011 - December 2013</h5>
-					<h6>Adam Mickiewicz University in Poznań</h6>
-					<p>Master’s Degree in Environmental Biology</p>
+				<div class="timeline left" id="uam" tabindex="0">
+					<a href="#uam_popup">
+						<h5>October 2011 - December 2013</h5>
+						<h6>Adam Mickiewicz University in Poznań</h6>
+						<p>Master’s Degree in Environmental Biology</p>
+					</a>
+				</div>
+			</div>
+			<div class="popup" id="neuca_popup">
+				<div class="popup_content">
+					<img src="img/icons/html.png"/>
+					<a class="popup_close" href="#neuca">&times;</a>
+					<h6>Junior Service Desk Specialist</h6>
+					<p class="popup_txt">
+						I receive error notifications from users and solve IT problems (first line of support). Sometimes I need to escalate notifications to the next support lines. Then I have to monitor and coordinate work and finally give feedback to users. Besides, I make documentation about the application process during entire workflow.
+					</p>
+				</div>
+			</div>
+			<div class="popup" id="umk_popup">
+				<div class="popup_content">
+					<img src="img/icons/html.png"/>
+					<a class="popup_close" href="#umk">&times;</a>
+					<h6>.NET section</h6>
+					<p class="popup_txt">
+						During course I have learnd the fundamentals of .NET technology. I know the basics of C# and XAML and I am able to build simple console, Windows Forms, WPF and UWP applications in Visual Studio 2015/2017. I have learnd basic SQL transactions, and I can use them to build simple database applications.
+					</p>
+				</div>
+			</div>
+			<div class="popup" id="cl_popup">
+				<div class="popup_content">
+					<img src="img/icons/html.png"/>
+					<a class="popup_close" href="#cl">&times;</a>
+					<h6>Technician</h6>
+					<p class="popup_txt">
+						I was responsible for conducting laboratory tests of plant and water samples. I was looking for bacterial and viral pothogens in export and import material. I have used molecular and serological techniques like PCR or ELISA.
+					</p>
+				</div>
+			</div>
+			<div class="popup" id="up_popup">
+				<div class="popup_content">
+					<img src="img/icons/html.png"/>
+					<a class="popup_close" href="#up">&times;</a>
+					<h6>Engineering in Biotechnology</h6>
+					<p class="popup_txt">
+						My studies at this University were focused on biochemistry, molecular biology and genetic engineering. I was mainly involved in the study of plant viruses and my engineering work concerned genetic and biological diversity of virus isolates from cucurbit plants.
+					</p>
+				</div>
+			</div>
+			<div class="popup" id="uam_popup">
+				<div class="popup_content">
+					<img src="img/icons/html.png"/>
+					<a class="popup_close" href="#uam">&times;</a>
+					<h6>Master’s Degree in Environmental Biology</h6>
+					<p class="popup_txt">
+						Biological studies cover a wide spectrum of issues like zoology, botany, plant and animal physiology or cell biology. I was focused on parasitology, animal morphology and phylogenesis and my master thesis concerned morphological nad molecular data in taxonomic studies.
+					</p>
 				</div>
 			</div>
 		</section>
@@ -144,28 +204,68 @@
 				</div>
 				<div id="technologies">
 					<div class="icon_block">
-						<a class="icon_link" href="#">
+						<a class="icon_link" id="html_link" href="#html_popup">
 							<img src="img/icons/html.png"/>
 							<p class="hidden_name">HTML</p>
 						</a>
 					</div>
 					<div class="icon_block">
-						<a class="icon_link" href="#">
+						<a class="icon_link" href="#css_popup">
 							<img src="img/icons/css.png"/>
 							<p class="hidden_name">CSS</p>
 						</a>
 					</div>
 					<div class="icon_block">
-						<a class="icon_link" href="#">
+						<a class="icon_link" href="#csharp_popup">
 							<img src="img/icons/csharp.png"/>
 							<p class="hidden_name">C#</p>
 						</a>
 					</div>
 					<div class="icon_block">
-						<a class="icon_link" href="#">
+						<a class="icon_link" href="#sql_popup">
 							<img src="img/icons/sql.png"/>
 							<p class="hidden_name">SQL</p>
 						</a>
+					</div>
+				</div>
+			</div>
+			<div class="popup" id="html_popup">
+				<div class="popup_content">
+					<img src="img/icons/html.png"/>
+					<a class="popup_close" href="#coding">&times;</a>
+					<h6>HTML</h6>
+					<div class="popup_txt">
+						Basic knowledge about HTML markup and ability of making simple websites.
+					</div>
+				</div>
+			</div>
+			<div class="popup" id="css_popup">
+				<div class="popup_content">
+					<img src="img/icons/html.png"/>
+					<a class="popup_close" href="#coding">&times;</a>
+					<h6>CSS</h6>
+					<div class="popup_txt">
+						Basic knowledge about CSS styling
+					</div>
+				</div>
+			</div>
+			<div class="popup" id="csharp_popup">
+				<div class="popup_content">
+					<img src="img/icons/html.png"/>
+					<a class="popup_close" href="#coding">&times;</a>
+					<h6>C#</h6>
+					<div class="popup_txt">
+						Ability of building simple console, WPF and UWP applications in Visual Studio
+					</div>
+				</div>
+			</div>
+			<div class="popup" id="sql_popup">
+				<div class="popup_content">
+					<img src="img/icons/html.png"/>
+					<a class="popup_close" href="#coding">&times;</a>
+					<h6>SQL</h6>
+					<div class="popup_txt">
+						Knowledge about basic SQL transactions and ability of building database apps
 					</div>
 				</div>
 			</div>
@@ -180,32 +280,71 @@
 				</div>
 				<div id="hobbies">
 					<div class="icon_block">
-						<a class="icon_link" href="#">
+						<a class="icon_link" href="#basketball_popup">
 							<img src="img/icons/basketball.png"/>
 							<p class="hidden_name">Basketball</p>
 						</a>
 					</div>
 					<div class="icon_block">
-						<a class="icon_link" href="#">
-							<img src="img/icons/ornithology.png"/>
+						<a class="icon_link" href="#bird_popup">
+							<img src="img/icons/bird.png"/>
 							<p class="hidden_name">Birdwatching</p>
 						</a>
 					</div>
 					<div class="icon_block">
-						<a class="icon_link" href="#">
+						<a class="icon_link" href="#fantasy_popup">
 							<img src="img/icons/fantasy.png"/>
 							<p class="hidden_name">Fantasy & Sci-Fi</p>
 						</a>
 					</div>
-					<!--<a href="#">
-						<img src="img/icons/basketball.png" />
-					</a>
-					<a href="#">
-						<img src="img/icons/ornithology.png" />
-					</a>
-					<a href="#">
-						<img src="img/icons/fantasy.png" />
-					</a>-->
+				</div>
+			</div>
+			<div class="popup" id="basketball_popup">
+				<div class="popup_content">
+					<img src="img/icons/basketball.png"/>
+					<a class="popup_close" href="#hobby">&times;</a>
+					<h6>Basketball</h6>
+					<p class="popup_txt">
+						I love to play basketball! At least once a week I meet with my colleagues and we play for fun. In spring and summer I try to go outside and practice some moves (alone or with my friends). I am also a huge fan of <a href="http://www.nba.com/celtics/" target="_blank">Boston Celtics</a> and the entire <a href="http://www.nba.com/#/" target="_blank">NBA</a>. Whenever I can, I watch NBA games at night, because in Poland NBA games start around midnight - another time zone. I am building a small website about the best actions and moments in the history of the league. The code is available <a href="https://github.com/mateuszchrzanowski/NBA_Memories" target="_blank">here</a>.
+					</p>
+				</div>
+			</div>
+			<div class="popup" id="bird_popup">
+				<div class="popup_content">
+					<img src="img/icons/bird.png"/>
+					<a class="popup_close" href="#hobby">&times;</a>
+					<h6>Birdwatching</h6>
+					<p class="popup_txt">
+						I started to be interested in birds during my studies at the University in Poznań (Poland). I went with my friends to the seaside to an ornithological camp - <a href="http://operbalt.ug.edu.pl/" target="_blank">Operation Baltic</a>, where ornithologists caught and ringed birds. We spent great time and learned so much about birds. On such camp you can see (and touch!) bird species that you've seen in books and movies so far. We are trying to go to such camps regularly, at least once a year. It is a great opportunity to rest from office work or city noise and get closer to nature.
+					</p>
+				</div>
+			</div>
+			<div class="popup" id="fantasy_popup">
+				<div class="popup_content">
+					<img src="img/icons/fantasy.png"/>
+					<a class="popup_close" href="#hobby">&times;</a>
+					<h6>Fantasy & Sci-Fi</h6>
+					<p class="popup_txt">
+						Fantasy and Science Fiction have fascinated me from an early age. When I was a child, I liked fairy tales and cartoons (like every child!). In school times me and my friends often played computer, board and card games, which were full of fantastic creatures, magic items or fictioanal planets. Because of this sentiment, I still love fantasy and sci-fi. I still like to play computer games from 90's or watch the same old movie a hundred times.</br></br>
+						Here are my favourite productions:</br></br>
+						<span>Computer games:</span></br>
+						<a href="https://en.wikipedia.org/wiki/Diablo_(series)" target="_blank">Diablo 1 & 2</a></br>
+						<a href="https://en.wikipedia.org/wiki/StarCraft" target="_blank">Star Craft and Star Craft Brood War</a></br>
+						<a href="https://en.wikipedia.org/wiki/Baldur%27s_Gate_(series)" target="_blank">Baldur's Gate 1 & 2</a></br>
+						<a>Half Life 1 & 2</a></br></br>
+
+						<span>Movies:</span></br>
+						<a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings_(film_series)" target="_blank">Lord of the Rings trilogy</a></br>
+						<a href="https://en.wikipedia.org/wiki/The_Matrix" target="_blank">The Matrix</a></br>
+						<a href="https://en.wikipedia.org/wiki/Interstellar_(film)" target="_blank">Interstellar</a></br>
+						<a href="https://en.wikipedia.org/wiki/Inception" target="_blank">Inception</a></br>
+						<a href="https://en.wikipedia.org/wiki/Star_Wars" target="_blank">Star Wars saga</a></br></br>
+
+						<span>TV Series:</span></br>
+						<a href="https://en.wikipedia.org/wiki/Stranger_Things" target="_blank">Stranger Things</a></br>
+						<a href="https://en.wikipedia.org/wiki/Black_Mirror" target="_blank">Black Mirror</a></br>
+						<a href="https://en.wikipedia.org/wiki/Game_of_Thrones" target="_blank">Game of Thrones</a></br>
+					</p>
 				</div>
 			</div>
 		</section>
@@ -227,9 +366,9 @@
 		
 		<footer>
 			<div id="socials">
-				<a href="#"><img src="img/icons/facebook.png"/></a>
+				<a href="https://www.facebook.com/mateusz.chrzanowski.3" target="_blank"><img src="img/icons/facebook.png"/></a>
 				<a href="#"><img src="img/icons/linkedin.png"/></a>
-				<a href="#"><img src="img/icons/github.png"/></a>
+				<a href="https://github.com/mateuszchrzanowski" target="_blank"><img src="img/icons/github.png"/></a>
 			</div>
 		</footer>
 	</body>
