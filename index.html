@@ -20,7 +20,7 @@
 					</div>
 					<div class="nav_block">
 						<a class="nav_link" href="#edu_work">
-							<p>Education & Work</p>
+							<p>Career</p>
 						</a>
 					</div>
 					<div class="nav_block" id="logo">
@@ -44,68 +44,60 @@
 						</a>
 					</div>
 				</nav>
+				<div id="hamburger_menu">
+					<input type="checkbox" id="hamburger_toggle" />
+					<div id="menu_icon"></div>
+					<div id="hamburger_menu_content">
+						<ul id="hamburger_menu_list">
+							<li>
+								<a href="#about">
+									<input type="button" value="About me" onclick="closeMenu()" />
+								</a>
+							</li>
+							<li>
+								<a href="#edu_work">
+									<input type="button" value="Career" onclick="closeMenu()" />
+								</a>
+							</li>
+							<li>
+								<a href="#coding">
+									<input type="button" value="Coding" onclick="closeMenu()" />
+								</a>
+							</li>
+							<li>
+								<a href="#hobby">
+									<input type="button" value="Hobby" onclick="closeMenu()" />
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</header>
 		
 		<div class="overlay"></div>
 		
-		<section id="frame">
-			<a id="left" href="#">
-				<img src="img/icons/home.png" alt="Home icon"/>
-			</a>
-			<a id="right_up" href="#home">
-				<img src="img/icons/up.png" alt="Facebook icon"/>
-			</a>
-			<a id="right_down" href="#home">
-				<img src="img/icons/down.png" alt="Facebook icon"/>
-			</a>
-		</section>
-		
 		<section id="showcase">
 			<div class="container">
-				<!--<hr class="separator home_separator" /> </br>-->
 				<h1>Mateusz Chrzanowski</h1></br></br>
 				<hr class="separator home_separator" /></br></br>
 				<h4>cv website</h4>
-				<button>Read more</button>
+				<button onClick="readMore()">Read more</button>
 			</div>
 		</section>
-		
-		<!--
-		<div class="frame fr_left">
-			<a id="" href="#home"><img src="img/icons/home.png" alt="Home icon"/></a>
-		</div>
-		
-		<div class="frame fr_right">
-			<a id="" href="#home"><img src="img/icons/facebook.png" alt="Facebook icon"/></a>
-		</div>
-		-->
-		<!--
-		<div id="fixed_socials">
-			<div>
-				<a id="" href="#home"><img src="img/icons/facebook.png" alt="Facebook icon"/></a>
-			</div>
-			<div>
-				<a id="" href="#home"><img src="img/icons/github.png" alt="Github icon"/></a>
-			</div>
-			<div>
-				<a id="" href="#home"><img src="img/icons/linkedin.png" alt="Linkedin icon"/></a>
-			</div>
-		</div>
-		-->
 		
 		<section class="section_content about" id="about">
 			<div class="container">
 				<h2 class="headline">About me</h2>
 				<hr class="separator headline_separator" /></br>
 				<div id="about_photo"></div>
-				<p>My name is Mateusz and I work in IT sector for big company in Poland. I love Basketball, science-fiction, fantasy (especially computer games from 90's) and ornithology. For some time I'm passionate about coding and I am very interested in .NET technology. After work I try to write simple websites or apps and watch online courses to broaden my knowledge and skills.</p>
+				<p>My name is Mateusz and I work in IT sector for big company in Poland. I love basketball, birdwatching, experimental music and science-fiction/fantasy computer games from 90's. For some time I'm passionate about coding and I am very interested in .NET technology. After work I try to write simple websites or apps and watch online courses to broaden my knowledge and skills.</p>
 			</div>
 		</section>
 		
 		<section class="section_content edu_work" id="edu_work">
 			<div class="container">
-				<h2 class="headline">Education & Work</h2>
+				<h2 class="headline">Career</h2>
 				<hr class="separator headline_separator" /></br>
 				<div class="timeline left" id="neuca" tabindex="0">
 					<a href="#neuca_popup">
@@ -128,24 +120,25 @@
 						<p>Technician</p>
 					</a>
 				</div>
-				<div class="timeline right" id="up" tabindex="0">
-					<a href="#up_popup">
-						<h5>October 2010 - January 2015</h5>
-						<h6>Poznań University of Life Sciences</h6>
-						<p>Engineering in Biotechnology</p>
-					</a>
-				</div>
-				<div class="timeline left" id="uam" tabindex="0">
+				<div class="timeline right" id="uam" tabindex="0">
 					<a href="#uam_popup">
 						<h5>October 2011 - December 2013</h5>
 						<h6>Adam Mickiewicz University in Poznań</h6>
 						<p>Master’s Degree in Environmental Biology</p>
 					</a>
 				</div>
+				<div class="timeline left" id="up" tabindex="0">
+					<a href="#up_popup">
+						<h5>October 2010 - January 2015</h5>
+						<h6>Poznań University of Life Sciences</h6>
+						<p>Engineering in Biotechnology</p>
+					</a>
+				</div>
 			</div>
+			
 			<div class="popup" id="neuca_popup">
 				<div class="popup_content">
-					<img src="img/icons/html.png"/>
+					<img src="img/icons/neuca.png"/>
 					<a class="popup_close" href="#neuca">&times;</a>
 					<h6>Junior Service Desk Specialist</h6>
 					<p class="popup_txt">
@@ -155,7 +148,7 @@
 			</div>
 			<div class="popup" id="umk_popup">
 				<div class="popup_content">
-					<img src="img/icons/html.png"/>
+					<img src="img/icons/umk.png"/>
 					<a class="popup_close" href="#umk">&times;</a>
 					<h6>.NET section</h6>
 					<p class="popup_txt">
@@ -165,7 +158,7 @@
 			</div>
 			<div class="popup" id="cl_popup">
 				<div class="popup_content">
-					<img src="img/icons/html.png"/>
+					<img src="img/icons/piorin.jpg"/>
 					<a class="popup_close" href="#cl">&times;</a>
 					<h6>Technician</h6>
 					<p class="popup_txt">
@@ -173,23 +166,23 @@
 					</p>
 				</div>
 			</div>
-			<div class="popup" id="up_popup">
-				<div class="popup_content">
-					<img src="img/icons/html.png"/>
-					<a class="popup_close" href="#up">&times;</a>
-					<h6>Engineering in Biotechnology</h6>
-					<p class="popup_txt">
-						My studies at this University were focused on biochemistry, molecular biology and genetic engineering. I was mainly involved in the study of plant viruses and my engineering work concerned genetic and biological diversity of virus isolates from cucurbit plants.
-					</p>
-				</div>
-			</div>
 			<div class="popup" id="uam_popup">
 				<div class="popup_content">
-					<img src="img/icons/html.png"/>
+					<img src="img/icons/uam.jpg"/>
 					<a class="popup_close" href="#uam">&times;</a>
 					<h6>Master’s Degree in Environmental Biology</h6>
 					<p class="popup_txt">
 						Biological studies cover a wide spectrum of issues like zoology, botany, plant and animal physiology or cell biology. I was focused on parasitology, animal morphology and phylogenesis and my master thesis concerned morphological nad molecular data in taxonomic studies.
+					</p>
+				</div>
+			</div>
+			<div class="popup" id="up_popup">
+				<div class="popup_content">
+					<img src="img/icons/up.jpg"/>
+					<a class="popup_close" href="#up">&times;</a>
+					<h6>Engineering in Biotechnology</h6>
+					<p class="popup_txt">
+						My studies at this University were focused on biochemistry, molecular biology and genetic engineering. I was mainly involved in the study of plant viruses and my engineering work concerned genetic and biological diversity of virus isolates from cucurbit plants.
 					</p>
 				</div>
 			</div>
@@ -200,83 +193,57 @@
 				<div id="coding_txt">
 					<h2 class="headline">Coding</h2>
 					<hr class="separator headline_separator" /></br>
-					<p>I am beginner coder interested in .NET technology and recently also in web development. I know the fundamentals of C#, XAML, HTML, CSS and SQL. My skills include handling of Visual Studio 2015/2017 and SQL Server Management Studio. I am able to build simple static websites or console, Windows Forms, WPF nad UWP applications as well as to apply MVVM pattern. I am very self-motivated person so I constantly develop my coding skills by writing apps and websites. You can find my work <a id="coding_link" href="https://github.com/mateuszchrzanowski" target="_blank">here.</a></p>
+					<p>I am beginner coder interested in .NET technology and recently also in web development. I am very self-motivated person so I constantly develop my coding skills by writing apps and websites. You can find my work <a id="coding_link" href="https://github.com/mateuszchrzanowski" target="_blank">here</a> and below.</p>
 				</div>
 				<div id="technologies">
 					<div class="icon_block">
-						<a class="icon_link" id="html_link" href="#html_popup">
-							<img src="img/icons/html.png"/>
-							<p class="hidden_name">HTML</p>
-						</a>
-					</div>
-					<div class="icon_block">
-						<a class="icon_link" href="#css_popup">
-							<img src="img/icons/css.png"/>
-							<p class="hidden_name">CSS</p>
+						<a class="icon_link" href="#web_popup">
+							<img src="img/icons/web.png"/>
+							<p class="hidden_name">Web</p>
 						</a>
 					</div>
 					<div class="icon_block">
 						<a class="icon_link" href="#csharp_popup">
 							<img src="img/icons/csharp.png"/>
-							<p class="hidden_name">C#</p>
-						</a>
-					</div>
-					<div class="icon_block">
-						<a class="icon_link" href="#sql_popup">
-							<img src="img/icons/sql.png"/>
-							<p class="hidden_name">SQL</p>
+							<p class="hidden_name">.NET</p>
 						</a>
 					</div>
 				</div>
 			</div>
-			<div class="popup" id="html_popup">
+			<div class="popup" id="web_popup">
 				<div class="popup_content">
-					<img src="img/icons/html.png"/>
+					<img src="img/icons/web.png"/>
 					<a class="popup_close" href="#coding">&times;</a>
-					<h6>HTML</h6>
-					<div class="popup_txt">
-						Basic knowledge about HTML markup and ability of making simple websites.
-					</div>
-				</div>
-			</div>
-			<div class="popup" id="css_popup">
-				<div class="popup_content">
-					<img src="img/icons/html.png"/>
-					<a class="popup_close" href="#coding">&times;</a>
-					<h6>CSS</h6>
-					<div class="popup_txt">
-						Basic knowledge about CSS styling
-					</div>
+					<h6>Websites</h6>
+					<p class="popup_txt">
+						I have basic knowledge about HTML5/CSS3. I am able to make simple static websites.</br><br>
+						Here are links to source code for some of my projects:</br><br>
+						<a href="https://github.com/mateuszchrzanowski/WebCV" target="_blank">WebCV (color version)</a></br>
+						<a href="https://github.com/mateuszchrzanowski/WebCV_minimal" target="_blank">WebCV (black & white version)</a></br>
+						<a href="https://github.com/mateuszchrzanowski/NBA_Memories" target="_blank">NBA Memories</a></br>
+						<a href="#" target="_blank">Beautiful Noise - My Top Albums (site under construction)</a>
+					</p>
 				</div>
 			</div>
 			<div class="popup" id="csharp_popup">
 				<div class="popup_content">
-					<img src="img/icons/html.png"/>
+					<img src="img/icons/csharp.png"/>
 					<a class="popup_close" href="#coding">&times;</a>
 					<h6>C#</h6>
-					<div class="popup_txt">
-						Ability of building simple console, WPF and UWP applications in Visual Studio
-					</div>
-				</div>
-			</div>
-			<div class="popup" id="sql_popup">
-				<div class="popup_content">
-					<img src="img/icons/html.png"/>
-					<a class="popup_close" href="#coding">&times;</a>
-					<h6>SQL</h6>
-					<div class="popup_txt">
-						Knowledge about basic SQL transactions and ability of building database apps
-					</div>
+					<p class="popup_txt">
+						Ability of building simple console, WPF and UWP applications in Visual Studio. I know the fundamentals of C#, XAML and SQL. My skills include handling of Visual Studio 2015/2017 and SQL Server Management Studio. I am able to build console, Windows Forms, WPF nad UWP applications as well as to apply MVVM pattern.</br><br>
+						Here are links to source code for some of my projects:</br><br>
+					</p>
 				</div>
 			</div>
 		</section>
 		
 		<section class="section_content hobby" id="hobby">
 			<div class="container">
-				<div class="hobby_txt">
+				<div id="hobby_txt">
 					<h2 class="headline">Hobby</h2>
 					<hr class="separator headline_separator" /></br>
-					<p></p>
+					<p>When I have some free time, I try to use it for one of my hobbies:</p>
 				</div>
 				<div id="hobbies">
 					<div class="icon_block">
@@ -371,5 +338,7 @@
 				<a href="https://github.com/mateuszchrzanowski" target="_blank"><img src="img/icons/github.png"/></a>
 			</div>
 		</footer>
+		
+		<script src="js/main.js"></script>
 	</body>
 </html>
