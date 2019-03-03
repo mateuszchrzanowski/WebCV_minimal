@@ -881,6 +881,10 @@ footer{
 	#bn_project{
 		grid-column: 3/4;
 	}
+	
+	#heroes_project{
+		grid-column: 2/3
+	}
 }
 
 @media (max-width: 975px){
@@ -996,7 +1000,7 @@ footer{
 		grid-template-rows: repeat(3, 1fr);
 	}
 
-	#webcv_project, #nba_project, #bn_project{
+	#webcv_project, #nba_project, #bn_project, #heroes_project{
 		grid-column: 1/2;
 		margin-left: 4rem;
 		margin-right: 4rem;
@@ -1024,7 +1028,7 @@ footer{
 		line-height: 2;
 	}
 	
-	#webcv_project, #nba_project, #bn_project{
+	#webcv_project, #nba_project, #bn_project, #heroes_project{
 		margin-left: 2rem;
 		margin-right: 2rem;
 	}
@@ -1098,7 +1102,7 @@ footer{
 }
 
 @media (max-width: 425px){
-	#webcv_project, #nba_project, #bn_project{
+	#webcv_project, #nba_project, #bn_project, #heroes_project{
 		margin-left: 0;
 		margin-right: 0;
 	}
